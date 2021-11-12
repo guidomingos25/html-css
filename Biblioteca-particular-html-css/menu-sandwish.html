@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu responsivo</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 800px) {
+    #menu-burguer{
+        display: none;
+    } 
+}
+
+/*início da caixa*/
+
+.dropdown{
+    border: 2px solid rgb(99, 98, 98);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dropdown div{
+    width: 30px;
+    height: 7px;
+    background-color: rgb(99, 98, 98);
+    border-radius: 3px;
+}
+
+#caixa-menu{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px 10px 10px auto;
+}
+
+#dropdown{
+    display: none;
+}
+
+/*final da caixa*/
+
+
+
+
+/*início da lista*/
+
+.menu{
+    height: 0px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+#dropdown:checked ~ .menu {
+    height: 160px;    
+}
+
+.menu li {
+    background-color:rgb(228, 228, 228);
+    border: 1px solid rgb(99, 98, 98);
+    list-style: none;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu .link {
+    color: rgb(99, 98, 98);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/*final da lista*/
+
+
+
+
+/*início das animações*/
+
+#dropdown:checked ~ label > .dropdown > .traço01{
+    transform: translateY(11.5px) rotate(45deg);
+    transition: 0.3s;
+}
+
+#dropdown:checked ~ label > .dropdown > .traço02{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#dropdown:checked ~ label > .dropdown > .traço03{
+    transform: translateY(-11.5px) rotate(-45deg);
+    transition: 0.3s;
+}
+
+#dropdown ~ label > .dropdown > .traço01{
+    transform: translateY(0px) rotate(0deg);
+    transition: 0.3s;
+}
+
+#dropdown ~ label > .dropdown > .traço02{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+#dropdown ~ label > .dropdown > .traço03{
+    transform: translateY(0px) rotate(0deg);
+    transition: 0.3s;
+}
+
+/*fim das animações*/
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>   
+            <div id="menu-burguer">
+                <input type="checkbox" name="dropdown" id="dropdown">
+                <label id="caixa-menu" for="dropdown">
+                    <div class="dropdown">
+                        <div class="traço01"></div>
+                        <div class="traço02"></div>
+                        <div class="traço03"></div>
+                    </div>
+                </label>
+                <div class="menu">
+                    <ul>
+                        <li><a class="link" href="#">HOME</a></li>
+                        <li><a class="link" href="#">SOBRE</a></li>
+                        <li><a class="link" href="#">LOCALIZAÇÃO</a></li>
+                        <li><a class="link" href="#">PORTIFÓLIO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        hswjxsbajbasj
+    </header>
+    
+</body>
+</html>

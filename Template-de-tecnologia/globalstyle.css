@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(197, 200, 212);
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-header{
+    background-color: rgb(97, 186, 221);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    grid-area: "header";
+    border: 1px solid black;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container-header > .logo{
+    margin-left: 20px;
+    color: rgb(4, 48, 68);
+    font-family: 'Fredoka One', cursive;
+}
+
+.container-header > div > input{
+    height: 25px;
+    border-radius: 10px;
+}
+
+.container-header > div > a > img{
+    height: 20px;
+    vertical-align: middle;
+}
+
+.container-header > .menu> ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-header > .menu> ul > li{
+    list-style: none;
+    height: 70px;
+}
+
+.container-header > .menu> ul > li > a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(4, 48, 68);
+    box-sizing: border-box;
+    height: 70px;
+    padding: 24px 20px;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.container-header > .menu> ul > li > a:hover{
+    background-color: rgb(5, 69, 80);
+    color: white;
+}
+
+
+/*main*/
+
+main{
+    grid-area: "main";
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-main > div{
+    border: 2px solid black;
+    border-bottom: 0px;
+    margin: 23px 10px 23px;
+    background-color: rgb(253, 253, 253);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(4, 48, 68);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.664);
+    width: 250px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    transition-duration: 1s;
+}
+
+.container-main > div:hover{
+    margin-top: 23px;
+    background-color: rgb(3, 21, 122);
+    width: 300px;
+}
+
+.container-main > div:hover > p {
+    color: white;
+}
+
+.container-main > div > .titulo{
+    background-color: rgb(97, 186, 221);
+    margin: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    font-size: 0.7em;
+    border: 1px solid black;
+}
+
+.container-main > div > p{
+    width: 220px;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px rgb(133, 131, 131);
+}
+
+.container-main > div > img{
+    width: 200px;
+}
+
+/*footer*/
+
+footer{
+    grid-area: "footer";
+    background-color: rgb(97, 186, 221);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border:1px solid black;
+    justify-content: space-around;
+    height: 52px;
+}
+
+footer > div > p {
+    text-align: center;
+    font-size: 0.8em;
+    position: sticky;
+    bottom: 0px;
+}
+
+footer > div > a > img {
+    margin: 3px;
+    width: 25px;
+}
+
+footer > .social{
+    display: flex;
+    flex-wrap: wrap;
+}

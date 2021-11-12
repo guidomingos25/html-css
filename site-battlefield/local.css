@@ -1,0 +1,90 @@
+/* inicio main*/
+
+.bg-top{
+    background-image: url(imagens/EGS_Battlefield2042_DICE_S1_2560x1440-36f16374c9c29a18a46872795b483d72.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.container-article{
+    width: 80%;
+    min-height: 70vh;
+    max-height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1{
+    color: var(--cor-destaque);
+    padding: 10px 10px 10px 40px;
+    background-image: linear-gradient(to bottom, black, #011C26);
+    text-align: center;
+}
+
+main h2{
+    color: var(--cor-titulo);
+    padding: 10px 10px 10px 60px;
+
+}
+
+main p{
+    margin: 40px;
+    text-align: justify;
+    font-family: var(--fonte-texto);
+}
+
+main ul{
+    margin: 40px 40px 40px 100px
+}
+
+.bg01{
+    background-image: url(imagens/bg01.jfif);
+    background-size: cover  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-position-y: center;
+    height: 70vh;
+    border: 1px solid black
+    }
+
+.bg02{
+    background-image: url(imagens/bg02.png);
+    background-size: cover  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-position-y: center;
+    height: 70vh;
+    border: 1px solid black;
+    }
+
+.bg03{
+    background-image: url(imagens/bg03.png);
+    background-size: cover  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-position-y: center;
+    height: 70vh;
+    border: 1px solid black;
+    }
+
+.bg04{
+    background-image: url(imagens/bg04.jfif);
+    background-size: cover  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-position-y: center;
+    height: 70vh;
+    border: 1px solid black;
+    }
+
+/* fim main*/
