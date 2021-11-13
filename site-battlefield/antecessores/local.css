@@ -23,7 +23,12 @@ main{
     background-color: var(--cor-fundo);
 }
 
-main > .img {
+main > div{
+    border: 1px solid var(--cor-destaque);
+    border-top: none;
+}
+
+main > .img-artigo {
     height: auto;
     align-content: center;
     display: flex;
@@ -35,20 +40,33 @@ main > .artigo{
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding: 30px;
+text-align: justify;
 }
 
+main > .artigo > p{
+    font-family: var(--fonte-texto);
+}
+
+
 main > div > img {
-    border-radius: 10px;
-    margin: 80px 30px;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     min-width: 200px;
+    filter: grayscale(1);
+    transition-duration: 1s;
+}
+
+main > div > img:hover {
+    filter: grayscale(0);
+}
+
+main > div > img:hover {
+    opacity: 100%;
 }
 
 main h1 {
     color: var(--cor-destaque);
-    padding: 30px;
+    padding: 20px;
 }
 
 

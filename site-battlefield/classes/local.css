@@ -1,0 +1,42 @@
+/* inicio main*/
+.container-article{
+    width: 80%;
+    min-height: 70vh;
+    max-height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1{
+    color: var(--cor-destaque);
+    padding: 10px 10px 10px 40px;
+    background-image: linear-gradient(to bottom, black, #011C26);
+    text-align: center;
+}
+
+main h2{
+    color: var(--cor-titulo);
+    padding: 10px 10px 10px 60px;
+
+}
+
+main p{
+    margin: 40px;
+    text-align: justify;
+    font-family: var(--fonte-texto);
+}
+
+.bg01{
+    background-image: url(imagens/bg01.jpg);
+    background-size: cover  ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position-y: 68px;
+    height: 70vh;
+    }
+
+
+/* fim main*/

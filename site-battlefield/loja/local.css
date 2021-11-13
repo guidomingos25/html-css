@@ -1,0 +1,66 @@
+:root{
+    --cor-fundo: #011C26;
+    --cor-fundo-titulo: #025159;
+    --cor-titulo: #0CF2C8;
+    --cor-texto: #0AA696;
+    --cor-destaque: #FF8321;
+
+    --fonte-padrao:'Oswald', sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-texto: 'Source Sans Pro', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.container-promo{
+    border: 1px solid var(--cor-destaque);
+    border-radius: 30px;
+    margin: 30px 0px;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.container-promo:hover{
+    transform: scale(105%);
+}
+
+.container-promo > .content > h1{
+    color: black;
+    padding: 0px 20px 40px 20px;
+    background-image: linear-gradient(to bottom, var(--cor-destaque), black);
+    text-align: center;
+}
+
+.container-promo > .content > ul > li{
+    text-align: justify;
+    margin: 0px 30px 10px 30px;
+    font-size: 14px;
+}
+
+.img-promo{
+    min-width: 250px;
+    max-width: 300px;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.img-promo > img{
+    width: 100%;
+}
+
+.content{
+    max-width: 300px;
+}
