@@ -45,6 +45,7 @@ text-align: justify;
 
 main > .artigo > p{
     font-family: var(--fonte-texto);
+    margin: 20px
 }
 
 
